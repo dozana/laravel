@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Custom styles
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    height: calc(100vh - 56px); /* Adjust the height based on your navbar height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds viewport */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Example background color */
+    padding: 10px 20px; /* Example padding */
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Example shadow */
+}
+
