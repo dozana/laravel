@@ -1,15 +1,21 @@
 @extends('admin.layouts.app')
 
 @section('content')
-    <div class="card">
-        <div class="card-body">
-            <h3 class="mb-3">Create Category</h3>
+    <h5 class="mb-4">კატეგორიის დამატება</h5>
 
-            @if (session('status'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('status') }}
-                </div>
-            @endif
+    <form action="{{ route('categories.store') }}" method="POST">
+        @csrf
+        <div class="mb-3">
+            <label for="name" class="form-label">სახელი</label>
+            <input type="text" class="form-control" id="name" name="name" value="{{ old('name') }}">
         </div>
-    </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary btn-sm">დამატება</button>
+            <a href="{{ route('categories.index') }}" class="btn btn-link btn-sm">უკან დაბრუნება</a>
+        </div>
+    </form>
+
+    @include('admin.partials.messages')
+
 @endsection

@@ -27,7 +27,6 @@ main {
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -37,3 +36,11 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Example shadow */
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #ff0000;
+}

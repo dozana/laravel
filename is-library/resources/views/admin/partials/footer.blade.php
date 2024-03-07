@@ -1,3 +1,3 @@
 <footer>
-    <small>All Rights Reserved</small>
+    <small>2024 ყველა უფლება დაცულია</small>
 </footer>
